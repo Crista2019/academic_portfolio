@@ -49,6 +49,7 @@ body {
 
 .item-center { 
 	flex-grow: 1; /* Set the middle element to grow and stretch */
+	width: 100%;
 }
 
 	.item + .item { 
@@ -61,8 +62,8 @@ h1 {
 }
 
 .pdf {
-	width: 40em;
-	height: 40em;
+	width: 100%;
+	height: 20em;
 }
 
 #navbar {
