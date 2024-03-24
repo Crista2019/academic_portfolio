@@ -61,6 +61,7 @@ h1 {
 	font-size: 3em;
 }
 
+
 .pdf {
 	width: 100%;
 	height: 600px;
@@ -96,11 +97,21 @@ a {
 	color: #D6DAC8;
 	text-decoration: none;
 	padding: .5em;
+	letter-spacing: 5px;
+  	text-shadow: 5px 5px 0px #036661;
+  	font-style: normal;
 }
 
 a:hover {
 	color: #d5a499;
 	font-weight: bold;
+	font-style: italic;
+}
+
+#socials a {
+	color: #9CAFAA;
+	letter-spacing: 5px;
+  	text-shadow: 5px 5px 0px #D6DAC8;
 }
 
 #socials a:hover {
