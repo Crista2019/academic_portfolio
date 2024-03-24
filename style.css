@@ -4,14 +4,40 @@
   font-style: normal;
 }
 
-body {
-	background-color: #9CAFAA;
-	color: #D6DAC8;
-	text-align: center;
-	font-style: normal;
+.overpass {
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
 
-	.container {
+.parallax {
+	/* Create the parallax scrolling effect */
+	background-image: url("BrainSagittal.gif");
+	background-attachment: fixed;
+	background-position: center;
+
+	/* adjust to fill the screen*/
+	padding: .5em;
+	height: 6em;
+	margin: 2em;
+	margin-bottom: -2em;
+}
+
+body {
+	background-color: #e8f4ea;
+	color: #9CAFAA;
+	text-align: center;
+	font-style: normal;
+	font-family: "Overpass", sans-serif;
+}
+
+#bio, #projects, #cv, #socials {
+	padding-top: 5em; /* Add a top margin to avoid content overlay */
+	margin-bottom: -4em;
+}
+
+.container {
 	display: flex;
 	/*background-color: red;*/
 }
@@ -19,12 +45,10 @@ body {
 .item {
 	height: 100px;
 	width: 100px; /* A fixed width as the default */
-	/*background-color: blue;*/
 }
 
 .item-center { 
 	flex-grow: 1; /* Set the middle element to grow and stretch */
-	/*background-color: green;*/
 }
 
 	.item + .item { 
@@ -33,22 +57,31 @@ body {
 
 h1 {
 	position: middle;
-	font-size: 6em;
+	font-size: 3em;
+}
+
+.pdf {
+	width: 40em;
+	height: 40em;
 }
 
 #navbar {
-	background-color: #EFBC9B;
-	color: #9CAFAA;
 	padding: .5em;
-	width: 250%;
-	font-weight: bold;
-	font-size: 1.5em;
-	margin-left: -2em;
+	width: 100%;
+	height: 10em;
+	font-style: normal;
+	font-size: 1em;
+	margin: -1em;
+	margin-bottom: 1em;
+	position: fixed; /* Set the navbar to fixed position */
+	background-image: linear-gradient(to bottom, #596B66, rgba(1,1,1,0) 80%);
+
 }
 
 ul {
 	list-style: none;
-	text-align: right;
+	text-align: center;
+	display: inline-flex;
 }
 
 li {
@@ -56,18 +89,18 @@ li {
 }
 
 a {
-	color: #9CAFAA;
+	font-size: 1.25em;
+	color: #D6DAC8;
 	text-decoration: none;
-	padding: 1em;
+	padding: .5em;
 }
 
 a:hover {
-	color: #7A8D88;
-	text-decoration: wavy underline;
+	color: #d5a499;
+	font-weight: bold;
 }
 
-a:active {
-	font-style: bold;
-	color: #7A8D88;
-	text-decoration: wavy underline;
+#socials a:hover {
+	color: #d5a499;
+	font-weight: bold;
 }
