@@ -61,6 +61,9 @@ h1 {
 	font-size: 3em;
 }
 
+p {
+	font-size: 1.5em;
+}
 
 .pdf {
 	width: 100%;
@@ -93,16 +96,25 @@ li {
 }
 
 a {
+	text-decoration: none;
+	color: #d5a499;
+}
+
+a:hover {
+	font-weight: bold;
+	font-style: italic;
+}
+
+#navbar a {
 	font-size: 1.25em;
 	color: #D6DAC8;
-	text-decoration: none;
 	padding: .5em;
 	letter-spacing: 5px;
   	text-shadow: 5px 5px 0px #036661;
   	font-style: normal;
 }
 
-a:hover {
+#navbar a:hover {
 	color: #d5a499;
 	font-weight: bold;
 	font-style: italic;
@@ -110,11 +122,11 @@ a:hover {
 
 #socials a {
 	color: #9CAFAA;
-	letter-spacing: 5px;
+	letter-spacing: 6px;
   	text-shadow: 5px 5px 0px #D6DAC8;
+  	font-size: 1.5em;
 }
 
 #socials a:hover {
 	color: #d5a499;
-	font-weight: bold;
 }
